@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #3f65eb, #5636f6);
+}
+
+/* Responsividade Mobile-First */
+#container {
+    background-color: #fdf9f9;
+    padding: 16px;
+    margin: 12px;
+    border-radius: 18px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+#container__pesquisa__form {
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+#container__pesquisa__form input {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+#container__pesquisa__form input:focus {
+    outline: none;
+}
+
+#container__pesquisa__form button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+#container__infos {
+    display: none;
+}
+
+#container__infos.container__clima {
+    display: block;
+}
+
+#container__infos__weather {
+    background: linear-gradient(90deg, #5636f6, #3f65eb);
+    color: #FFFFFF;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#container__infos__weather p {
+    font-weight: 600;
+}
+
+#infos__weather__temp {
+    font-size: 32px;
+}
+
+#infos__weather__desc {
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+#container__infos__extras {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#container__infos__extras .info {
+    width: 100%;
+    border: 1px solid #5636f6;
+    border-radius: 12px;
+    padding: 8px;
+    text-align: left;
+}
+
+#container__infos__extras .info i {
+    font-size: 20px;
+}
+
+#infos__extras__temp-max, 
+#infos__extras__temp-min, 
+#infos__extras__vento, 
+#infos__extras__umidade {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center; 
+}
+
+.infos__extras__desc {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+#temp__max {
+    color: #a30e0e;
+}
+
+#temp__min {
+    color: #503feb;
+}
+
+#wind {
+    color: rgb(0, 160, 53);
+}
+
+#droplet {
+    color: rgb(0, 138, 192);
+}
+
+#alerta {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#alerta img {
+    width: 200px;
+    height: 200px;
+}

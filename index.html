@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Previsão do Tempo | Nicholas Pimenta</title>
+  </head>
+  <body>
+    <section id="container">
+      <section id="container__pesquisa">
+        <h2>Confira o clima nas cidades:</h2>
+        <form id="container__pesquisa__form">
+          <input type="text" id="nome__cidade" placeholder="Escreva a cidade" />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </section>
+      <section id="container__infos">
+        <h3 id="container__infos__titulo">Duque de Caxias, RJ</h3>
+        <div id="container__infos__weather">
+          <img id="infos__weather__img" src="https://openweathermap.org/img/wn/04d@2x.png" />
+          <div>
+            <p id="infos__weather__temp">26</p>
+            <p id="infos__weather__desc">Sol claro</p>
+          </div>
+        </div>
+        <div id="container__infos__extras">
+          <div class="info">
+            <div id="infos__extras__temp-max">
+              <i id="temp__max" class="fa-solid fa-temperature-high"></i>
+              <div class="infos__extras__desc">
+                <p><strong>Temp. max</strong></p>
+                <p id="temp-max">36</p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div id="infos__extras__temp-min">
+              <i id="temp__min" class="fa-solid fa-temperature-low"></i>
+              <div class="infos__extras__desc">
+                <p><strong>Temp. min</strong></p>
+                <p id="temp-min">23</p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div id="infos__extras__vento">
+              <i id="wind" class="fa-solid fa-wind"></i>
+              <div class="infos__extras__desc">
+                <p><strong>Vento</strong></p>
+                <p id="vento">6</p>
+              </div>
+            </div>
+          </div>
+          <div class="info">
+            <div id="infos__extras__umidade">
+              <i id="droplet" class="fa-solid fa-droplet"></i>
+              <div class="infos__extras__desc">
+                <p><strong>Umidade</strong></p>
+                <p id="umidade">67</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="alerta"></div>
+    </section>
+    <script src="script/script.js"></script>
+  </body>
+</html>
